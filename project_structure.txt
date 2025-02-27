@@ -1,0 +1,82 @@
+python_learning/
+│
+├── basics/                 # Python基础知识
+│   ├── variables.py       # 变量和数据类型
+│   ├── control_flow.py    # 控制流（if, for, while等）
+│   ├── functions.py       # 函数
+│   └── oop/              # 面向对象编程
+│       ├── basic_class.py        # 基本类定义和使用
+│       ├── inheritance.py        # 继承和多态
+│       ├── encapsulation.py      # 封装和访问控制
+│       ├── polymorphism.py       # 多态和抽象类
+│       ├── composition.py        # 组合和聚合
+│       └── metaclass.py          # 元类和类装饰器
+│
+├── design_patterns/       # 设计模式
+│   ├── creational/       # 创建型模式
+│   │   ├── singleton.py         # 单例模式
+│   │   ├── factory.py          # 工厂模式
+│   │   ├── abstract_factory.py # 抽象工厂
+│   │   ├── builder.py          # 建造者模式
+│   │   └── prototype.py        # 原型模式
+│   │
+│   ├── structural/       # 结构型模式
+│   │   ├── adapter.py          # 适配器模式
+│   │   ├── bridge.py           # 桥接模式
+│   │   ├── composite.py        # 组合模式
+│   │   ├── decorator.py        # 装饰器模式
+│   │   ├── facade.py           # 外观模式
+│   │   ├── flyweight.py        # 享元模式
+│   │   └── proxy.py            # 代理模式
+│   │
+│   └── behavioral/       # 行为型模式
+│       ├── chain.py            # 责任链模式
+│       ├── command.py          # 命令模式
+│       ├── interpreter.py      # 解释器模式
+│       ├── iterator.py         # 迭代器模式
+│       ├── mediator.py         # 中介者模式
+│       ├── memento.py          # 备忘录模式
+│       ├── observer.py         # 观察者模式
+│       ├── state.py            # 状态模式
+│       ├── strategy.py         # 策略模式
+│       ├── template.py         # 模板方法模式
+│       └── visitor.py          # 访问者模式
+│
+├── data_structures/       # 数据结构
+│   ├── lists.py          # 列表操作
+│   ├── dictionaries.py   # 字典操作
+│   ├── sets.py           # 集合操作
+│   └── tuples.py         # 元组操作
+│
+├── standard_library/      # 标准库学习
+│   ├── datetime_demo.py  # 时间日期处理
+│   ├── json_demo.py      # JSON处理
+│   ├── os_demo.py        # 操作系统接口
+│   ├── random_demo.py    # 随机数生成
+│   ├── threading_demo.py # 线程操作
+│   ├── multiprocessing_demo.py # 进程操作
+│   ├── io/              # IO操作
+│   │   ├── file_io.py         # 文件IO操作
+│   │   ├── binary_io.py       # 二进制IO操作
+│   │   ├── string_io.py       # 内存字符串IO
+│   │   └── network_io.py      # 网络IO操作
+│   └── database/        # 数据库操作
+│       ├── sqlite_demo.py      # SQLite数据库示例
+│       ├── mysql_demo.py       # MySQL数据库示例
+│       └── orm_demo.py         # SQLAlchemy ORM示例
+│
+├── third_party/          # 第三方库学习
+│   ├── numpy_examples/   # NumPy示例
+│   ├── pandas_examples/  # Pandas示例
+│   └── requests_examples/# Requests示例
+│
+├── projects/             # 实践项目
+│   ├── calculator/      # 简单计算器
+│   ├── todo_list/      # 待办事项
+│   └── weather_app/    # 天气查询应用
+│
+├── tests/               # 单元测试
+│   └── test_examples.py
+│
+├── requirements.txt     # 项目依赖
+└── README.md           # 项目说明 
