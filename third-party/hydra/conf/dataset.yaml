@@ -1,0 +1,7 @@
+dataset:   
+  name: "custom_dataset_v1.0"
+  path: "/datasets/custom/v1.0"
+  split: "test"
+  preprocessing:
+    - "remove_special_characters"
+    - "lowercase"

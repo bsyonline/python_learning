@@ -1,0 +1,27 @@
+hydra:
+  run:
+    dir: third-party/hydra/outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  sweep:
+    dir: third-party/hydra/multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    subdir: ${hydra.job.num}
+  job:
+    chdir: True
+  output_subdir: .hydra
+  job_logging:
+    formatters:
+      simple:
+        format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    handlers:
+      file:
+        filename: hydra.log
+        mode: w
+        formatter: simple
+        level: INFO
+
+# 默认配置
+defaults:
+  - dataset
+  - model
+  - evaluation
+  - task
+  - _self_

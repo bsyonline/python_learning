@@ -1,0 +1,7 @@
+evaluation:
+  metrics:
+    - "diversity"
+    - "fluency"
+  diversity_measure: "distinct_ngrams"
+  fluency_measure: "perplexity"
+  sample_size: 100

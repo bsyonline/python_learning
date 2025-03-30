@@ -1,0 +1,7 @@
+model:   
+  name: "meta-llama/Llama-2-7b" 
+  type: "transformer"
+  temperature: 0.7
+  max_length: 512
+  top_p: 0.9
+  fine_tune: True

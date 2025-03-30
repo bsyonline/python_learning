@@ -1,0 +1,4 @@
+task:
+  id: 1234
+  name: "text-generation"
+
