@@ -75,3 +75,22 @@ print(s.replace("机器", "深度"))  # 替换字符串中的"机"为"人"
 print(s.split("学"))  # 将字符串按"学"分割成列表
 print(s.split("学", 1))  # 将字符串按"学"分割成列表，分割次数为1
 
+# 将字符串以指定的宽度靠右放置左侧填充指定的字符
+print(s.rjust(50, 'a'))
+
+# 检查字符串是否由数字构成
+print(s.isdigit())  # False
+# 检查字符串是否以字母构成
+print(s.isalpha())  # False
+# 检查字符串是否以数字和字母构成
+print(s.isalnum())  # False
+# 检查字符串是否以空格构成
+print(s.isspace())  # False
+# 检查字符串是否以标题显示(每个单词首字母大写)
+print(s.istitle())  # False
+# 检查字符串是否以大写显示
+print(s.isupper())  # False
+# 检查字符串是否以小写显示
+print(s.islower())  # True
+# 检查字符串是否以首字母大写显示
+print(s.istitle())  # False

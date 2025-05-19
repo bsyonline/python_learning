@@ -1,0 +1,6 @@
+defaults:
+  - base
+
+dataset:
+  dataset_name: wudao
+  dataset_path: /data/wudao_data_cleaned.json

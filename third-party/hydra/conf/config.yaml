@@ -1,0 +1,3 @@
+defaults:
+  - dataset: alpaca
+  - model: qwen2_7b

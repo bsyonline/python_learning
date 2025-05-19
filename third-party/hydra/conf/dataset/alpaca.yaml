@@ -1,0 +1,6 @@
+defaults:
+  - base
+
+dataset:
+  dataset_name: alpaca
+  dataset_path: /data/alpaca_data_cleaned.json

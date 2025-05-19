@@ -1,0 +1,4 @@
+model:
+  model_name: qwen2-14b
+  model_path: /model/Qwen2-14B-Instruct
+  tokenizer_path: /model/Qwen2-14B-Instruct
