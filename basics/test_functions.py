@@ -28,6 +28,23 @@ def create_profile(**kwargs):
         profile += f"{key}: {value}\n"
     return profile
 
+# 6. lambda 函数
+square = lambda x: x ** 2
+
+# 7. 内置函数
+import builtins
+print(dir(builtins)) # 打印所有内置函数和变量
+
+# 8. 闭包
+def outer_function(x):
+    """外部函数，返回一个闭包"""
+    def inner_function(y):
+        """内部函数，使用外部函数的变量"""
+        return x + y
+    return inner_function
+
+
+
 # 示例使用
 if __name__ == "__main__":
     # 测试基本函数
@@ -52,4 +69,14 @@ if __name__ == "__main__":
     # 测试关键字参数函数
     print("\n关键字参数示例：")
     profile = create_profile(name="李四", age=25, city="北京")
-    print(profile) 
+    print(profile)
+
+    # 测试 lambda 函数
+    print("\nlambda 函数示例：")
+    print(f"4的平方: {square(4)}")
+
+    # 测试闭包
+    print("\n闭包示例：")
+    closure = outer_function(10)
+    print(f"闭包结果: {closure(5)}")  # 输出 15
+

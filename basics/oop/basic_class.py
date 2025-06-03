@@ -106,6 +106,7 @@ def basic_class_demo():
     
     print(person1.introduce())
     print(person2.introduce())
+    print(f"物种: {Person.get_species()}")
     print(f"目前共有{Person.get_count()}个人")
     print(f"张三是成年人吗？ {Person.is_adult(person1.age)}")
     
