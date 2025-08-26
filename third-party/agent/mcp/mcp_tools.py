@@ -2,8 +2,11 @@ import platform
 import psutil
 import subprocess
 import json
-import mcp.server.fastmcp as mcp
+from fastmcp import FastMCP
 
+mcp = FastMCP("host-info-tools")
+
+@mcp.tool()
 def get_host_info() -> str:
     """get host information
     Returns:
@@ -33,9 +36,7 @@ def get_host_info() -> str:
 
     return json.dumps(info, indent=4)
 
-@mcp.tool()
-def foo():
-    return ""
+
 
 if __name__ == '__main__':
     print(get_host_info())
