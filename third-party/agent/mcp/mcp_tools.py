@@ -2,11 +2,7 @@ import platform
 import psutil
 import subprocess
 import json
-from fastmcp import FastMCP
 
-mcp = FastMCP("host-info-tools")
-
-@mcp.tool()
 def get_host_info() -> str:
     """get host information
     Returns:
@@ -21,10 +17,7 @@ def get_host_info() -> str:
     }
 
     cpu_count = psutil.cpu_count(logical=True)
-    if cpu_count is None:
-        info["cpu_count"] = "-1"
-    else:
-        info["cpu_count"] = str(cpu_count)
+    info["cpu_count"] = str(cpu_count) if cpu_count is not None else "-1"
     
     try:
         cpu_model = subprocess.check_output(
@@ -35,8 +28,3 @@ def get_host_info() -> str:
         info["cpu_model"] = "Unknown"
 
     return json.dumps(info, indent=4)
-
-
-
-if __name__ == '__main__':
-    print(get_host_info())
